@@ -46,7 +46,7 @@ const SignupPage = ({ onClose }) => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post('http://localhost:5000/signup', formData);
+        const response = await axios.post('https://cryptocurrnecy.onrender.com/signup', formData);
         console.log(response.data);
         navigate('/');
       } catch (error) {

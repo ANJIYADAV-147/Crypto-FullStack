@@ -44,7 +44,7 @@ const LoginPage = ({ onClose }) => {
     event.preventDefault();
     const userDetails = { username, password };  // Make sure to include email
 
-    const url = 'http://localhost:5000/login';
+    const url = 'https://cryptocurrnecy.onrender.com/login';
 
     try {
         // Wait for the response from axios
