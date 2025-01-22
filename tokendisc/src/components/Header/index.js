@@ -1,10 +1,10 @@
 
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../images/logo.jpg'
 import './index.css'
 import { IoMenu } from 'react-icons/io5'
-
+import Cookies from 'js-cookie'
 
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -13,8 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
 
-    const [isOpenLoginPopUp, setIsOpenLoginPopUp] = useState(false)
-    const [isOpenSignupPopup, setIsOpenSignupPopup] = useState(false)
+   
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -23,13 +22,15 @@ const Header = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const navigate=useNavigate();
 
-    const openLoginPopup = () => setIsOpenLoginPopUp(true)
-    const closeLoginPopup = () => setIsOpenLoginPopUp(false)
+    const onClickLogout=()=>{
+        
+        Cookies.remove('jwt_token')
+        navigate('/login')
+    }
 
-    const openSignupPopup = () => setIsOpenSignupPopup(true)
-    const closeSignupPopup = () => setIsOpenSignupPopup(false)
-
+    
     const renderMobileViewNavbar = () => {
         return (
             <div className='mobile-view-navbar'>
@@ -80,7 +81,7 @@ const Header = () => {
                         <MenuItem onClick={handleClose}>Learn</MenuItem>
                         <MenuItem onClick={handleClose}>Swap</MenuItem>
                         <Link to='/login'>
-                            <MenuItem  onClick={handleClose}>Logout</MenuItem>
+                            <MenuItem  onClick={handleClose && onClickLogout} >Logout</MenuItem>
                         </Link>
                     </Menu>
                 </div>
@@ -115,7 +116,7 @@ const Header = () => {
                         <li className='header-item'>Learn</li>
                         <li className='header-item'>Swap</li>
                         <Link to='/login'>
-                            <MenuItem  className='logout-button'>Logout</MenuItem>
+                            <MenuItem onClick={onClickLogout}  className='logout-button'>Logout</MenuItem>
                         </Link>
                     </ul>
 

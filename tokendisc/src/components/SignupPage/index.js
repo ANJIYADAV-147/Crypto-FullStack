@@ -15,11 +15,7 @@ const SignupPage = ({ onClose }) => {
 
   const navigate = useNavigate();
 
-  const handleClosePopup = () => {
-    if (onClose) {
-      onClose();
-    }
-  };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,7 +48,7 @@ const SignupPage = ({ onClose }) => {
       try {
         const response = await axios.post('http://localhost:5000/signup', formData);
         console.log(response.data);
-        navigate('/login');
+        navigate('/');
       } catch (error) {
         console.error('Error during signup request:', error.response?.data || error.message);
         setErrors({ ...errors, submit: 'An error occurred during signup. Please try again.' });

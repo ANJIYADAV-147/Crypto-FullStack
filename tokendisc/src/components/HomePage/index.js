@@ -1,5 +1,6 @@
 import { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link ,Navigate} from 'react-router-dom'
+import Cookies from 'js-cookie'
 import './index.css'
 import Header from '../Header'
 //import { MdCurrencyBitcoin } from "react-icons/md";
@@ -20,6 +21,10 @@ class HomePage extends Component {
     }
 
     render() {
+        const jwtToken=Cookies.get('jwt_token')
+        if(jwtToken===undefined){
+            return <Navigate to='/login'/>
+        }
 
         return (
 

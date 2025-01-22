@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,Navigate } from 'react-router-dom';
 import logo from '../images/logo.jpg';
-
+import Cookies from 'js-cookie'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import './index.css';
@@ -9,7 +9,7 @@ import './index.css';
 const LoginPage = ({ onClose }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
+  
   const [showSubmitError, setShowSubmitError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -34,13 +34,15 @@ const LoginPage = ({ onClose }) => {
     }
   };
 
-  const onSubmitSuccess = () => {
+
+  const onSubmitSuccess = (jwtToken) => {
+    Cookies.set('jwt_token',jwtToken,{expires:30})
     navigate('/')
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const userDetails = { username, password, email };  // Make sure to include email
+    const userDetails = { username, password };  // Make sure to include email
 
     const url = 'http://localhost:5000/login';
 
@@ -60,7 +62,7 @@ const LoginPage = ({ onClose }) => {
 
         // Check if the login is successful
         if (data.message === 'Login successful') {
-            onSubmitSuccess();  // Call success callback
+            onSubmitSuccess(data.jwt_token);  // Call success callback
         } else {
             onSubmitFailure(data.message);  // Show the error message from the backend
         }
@@ -102,6 +104,11 @@ const LoginPage = ({ onClose }) => {
       />
     </>
   );
+
+  const jwtToken=Cookies.get('jwt_token')
+  if(jwtToken!==undefined){
+    return <Navigate to='/'/>
+  }
 
   return (
     <div className="popup-container">
