@@ -1,0 +1,90 @@
+.header-component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+.header-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.login-sign-buttons-container{
+    display: flex;
+    flex-direction: row;
+}
+.header-item{
+    margin-left: 15px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.logout-button{
+    background-color: #3b65ed;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.signup-button{
+    background-color: #3b65ed;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-items-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.company-logo{
+    height: 30px;
+    width: 150px;
+    margin: 20px;
+}
+.link{
+    text-decoration: none;
+}
+.menu-items{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-y: scroll;
+    height: 100px;
+}
+.mobile-view-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.menulogo{
+    margin: 20px;
+}
+@media screen and (max-width: 991px){
+    .header-component{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width:992px){
+    .mobile-view-navbar{
+        display: none;
+    }
+}
+
+.menu-item{
+    color: green;
+}

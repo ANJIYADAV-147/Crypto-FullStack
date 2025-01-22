@@ -1,0 +1,520 @@
+.homePage-component {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ebe7;
+    margin: 20px;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.home-image {
+    height: 450px;
+    width: 450px;
+    margin: 40px;
+}
+
+.Home-heading {
+    color: #000000;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.heading-button-container {
+    padding: 50px;
+}
+
+.home-description {
+    color: #b8bbc2;
+    font-size: 20px;
+}
+
+.get-start-button {
+    background-color: #60a289;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.explore-button {
+    background-color: #60a289;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    height: 90vh;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    height: 420px;
+    width: 330px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.des {
+    color: #60a289;
+    font-size: 30px;
+}
+
+.about-description-container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.read-more-button {
+    background-color: #60a289;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.about-heading {
+    color: #000000;
+    font-size: 50px;
+}
+
+.about-des {
+    color: #7a7e80;
+    font-size: 19px;
+}
+
+.transactions-statics-container {
+    background-color: #ebeef7;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.why-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.easy-safe-plans-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 35px;
+}
+
+.why-us-item-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.why-us-content {
+    margin-left: 10px;
+    width: 350px;
+}
+
+.why-us-heading {
+    font-size: 25px;
+}
+
+.why-us-des {
+    font-size: auto;
+}
+
+.why-images {
+    margin-left: 20px;
+    height: 80px;
+    width: 75px;
+}
+
+.transaction-img {
+    height: 100px;
+    width: 100px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.total-count {
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.daily-transactions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitcoin-icon {
+    color: #83def7;
+    font-size: 150px;
+}
+
+.transaction-des {
+    color: #83def7;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+}
+
+.service {
+    color: #60a289;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services-heading {
+    font-size: 45px;
+}
+
+.different-services-container {
+    background-color: #e9ebe7;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.service-button {
+    background-color: #60a289;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.service-img {
+    height: 400px;
+    width: 800px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.item-description {
+    font-size: 25px;
+}
+
+.item-heading {
+    font-size: 38px;
+}
+
+.service-2-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-2 {
+    height: auto;
+    width: auto;
+    background-color: #e9ebe7;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-img-1 {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.item-description {
+    color: #b8bbc2;
+    font-size: 20px;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.token-sale-container {
+    background-color: #e9ebe7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.count-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.time-des {
+    color: #60a289;
+    margin: 0px;
+    padding: 0px;
+    font-size: 28px;
+}
+
+.buy-token-button {
+    background-color: #60a289;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.token-sale-heading {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.coming-soon {
+    font-size: 15px;
+    animation: colorChange 1s infinite;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.sale {
+    color: #60a289;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.transaction-card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img {
+    height: 40px;
+    width: 50px;
+    margin: 6px;
+    margin-bottom: 20px;
+}
+
+
+/* styles.css */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.home-image {
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.zoom-in {
+    animation: zoomIn 0.3s forwards;
+}
+
+.zoom-out {
+    animation: zoomOut 0.3s forwards;
+}
+
+
+@media screen and (max-width: 991px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+    }
+
+    .Home-heading {
+        font-size: 20px;
+        order: 2;
+    }
+
+    .home-image {
+        height: 300px;
+        width: 300px;
+        order: -1;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-button-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .get-start-button {
+
+        padding: 5px;
+        margin-right: 20px;
+    }
+
+    .explore-button {
+
+        padding: 5px;
+        margin-right: 25px;
+    }
+
+    .about-img {
+        display: none;
+    }
+    .des{
+        font-size: 20px;
+    }
+    .about-des{
+        font-size: 15px;
+    }
+
+    .about-heading {
+        font-size: 20px;
+    }
+    .easy-safe-plans-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .why-us-item-container{
+        align-items: flex-start;
+        width:auto;
+    }
+    .why-images{
+        height: 50px;
+        width: 50px;
+    }
+    .why-us-heading{
+        font-size: 18px;
+    }
+    .why-us-des{
+        font-size: 14px;
+    }
+    .why-us-container{
+        align-items: normal;
+    }
+    .why-us-content {
+        
+        width: auto;
+    }
+    .different-services-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .service-img{
+        width: 240px;
+        height: 200px;
+        order: -1;
+        
+    }
+    .service-2-3{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .service-2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .service-img-1{
+        margin-top: 10px;
+    }
+    .token-sale-heading{
+        font-size: 25px;
+    }
+    .sale{
+        text-align: center;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+.demo-section-img{
+    height: 500px;
+    width: 650px;
+    border-radius: 14px;
+}
+.demo-trading-container{
+    background-color: #e9ebe7;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+@media screen and (max-width: 991px){
+    .demo-trading-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .demo-section-img{
+        height: 300px;
+    }
+}

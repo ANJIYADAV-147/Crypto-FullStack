@@ -1,0 +1,100 @@
+.welcome-container{
+    background-color: #28332e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 850px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.welcome-heading{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.community-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ebe7;
+    
+}
+.welcome-des{
+    color: #ffffff;
+    margin-right: 20px;
+}
+.ask-button{
+    background-color: #60a289;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;
+}
+.user-comments-container{
+    border: 1px solid #acacac;
+    padding: 20px;
+    width: 800px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.gmail-user-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-button{
+    background-color: #60a289;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;
+    height: 40px;
+    width: 80px;
+}
+.username-heading{
+    font-size: 24px;
+    font-weight: bold;
+}
+.gmail-des{
+    color: #acacac;
+}
+.text-input{
+    width: 700px;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+}
+.send-button{
+    margin-left: 15px;
+    border: 0px;
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+}
+.input-send-container{
+    display: flex;
+    flex-direction: row;
+}
+.send-icon{
+    color: #60a289;
+
+}
+
+@media only screen and (max-width:991px){
+    .welcome-container{
+        width: auto;
+    }
+    .text-input{
+        width: auto;
+    }
+    .user-comments-container{
+        width: auto;
+    }
+}
