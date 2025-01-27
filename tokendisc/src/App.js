@@ -7,6 +7,7 @@ import CommunityPage from './components/CommunityPage';
 import AcademyPage from './components/AcademyPage';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
+import NotFound from './components/NotFound';
 
 
 
@@ -20,6 +21,7 @@ const App = () => (
       <Route exact path='/community-page' element={<CommunityPage />} />
       <Route exact path='/login' element={<LoginPage />} />
       <Route exact path='/signup' element={<SignupPage />} />
+      <Route exact path='/NotFound' element={<NotFound/>}/>
     </Routes>
 
   </BrowserRouter>

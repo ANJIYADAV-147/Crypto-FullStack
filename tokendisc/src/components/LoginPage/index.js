@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link,Navigate } from 'react-router-dom';
-import logo from '../images/logo.jpg';
+import logo from '../images/website-logo.png';
 import Cookies from 'js-cookie'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
@@ -9,6 +9,7 @@ import './index.css';
 const LoginPage = ({ onClose }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [email] = useState('');
   
   const [showSubmitError, setShowSubmitError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -42,9 +43,9 @@ const LoginPage = ({ onClose }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const userDetails = { username, password };  // Make sure to include email
+    const userDetails = { username, password ,email};  // Make sure to include email
 
-    const url = 'https://cryptocurrnecy.onrender.com/login';
+    const url = 'http://localhost:5000/login';
 
     try {
         // Wait for the response from axios
@@ -60,7 +61,6 @@ const LoginPage = ({ onClose }) => {
         const data = response.data;
         console.log(data);
 
-        // Check if the login is successful
         if (data.message === 'Login successful') {
             onSubmitSuccess(data.jwt_token);  // Call success callback
         } else {
@@ -120,6 +120,7 @@ const LoginPage = ({ onClose }) => {
             className="login-website-logo-desktop-img"
             alt="website logo"
           />
+          <h1 className='website-name'>Crypto</h1>
           <div className="input-container">{renderUsernameField()}</div>
           <div className="input-container">{renderPasswordField()}</div>
           

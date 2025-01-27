@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../images/logo.jpg'
+
 import './index.css'
 import { IoMenu } from 'react-icons/io5'
 import Cookies from 'js-cookie'
@@ -34,7 +34,7 @@ const Header = () => {
     const renderMobileViewNavbar = () => {
         return (
             <div className='mobile-view-navbar'>
-                <img src={logo} className='company-logo' alt='companyLogo' />
+                <h1 className='website-name'>Crypto</h1>
                 <div>
                     <Button
                         id="demo-positioned-button"
@@ -80,7 +80,7 @@ const Header = () => {
                         </Link>
                         <MenuItem onClick={handleClose}>Learn</MenuItem>
                         <MenuItem onClick={handleClose}>Swap</MenuItem>
-                        <Link to='/login'>
+                        <Link to='/login' className='link'>
                             <MenuItem  onClick={handleClose && onClickLogout} >Logout</MenuItem>
                         </Link>
                     </Menu>
@@ -93,7 +93,7 @@ const Header = () => {
         return (
             <div className='header-component'>
                 <Link className='link' to='/'>
-                    <img src={logo} className='company-logo' alt='companyLogo' />
+                <h1 className='website-name'>Crypto</h1>
                 </Link>
 
                 <div className='nav-items-buttons'>
@@ -115,8 +115,10 @@ const Header = () => {
                         </Link>
                         <li className='header-item'>Learn</li>
                         <li className='header-item'>Swap</li>
-                        <Link to='/login'>
-                            <MenuItem onClick={onClickLogout}  className='logout-button'>Logout</MenuItem>
+                        <Link to='/login' className='link'>
+                            <MenuItem onClick={onClickLogout}  >
+                            <button className='logout-button'>Logout</button>
+                            </MenuItem>
                         </Link>
                     </ul>
 

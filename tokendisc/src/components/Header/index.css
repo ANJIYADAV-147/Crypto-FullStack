@@ -12,6 +12,12 @@
     flex-direction: row;
     margin-top: 20px;
 }
+.website-name{
+    font-size: 40px;
+    margin: 10px;
+    color: #60a289;
+
+}
 .login-sign-buttons-container{
     display: flex;
     flex-direction: row;
@@ -75,6 +81,9 @@
     .header-component{
         display: none;
     }
+    .website-name{
+        font-size: 30px;
+    }
     
 }
 
@@ -83,8 +92,15 @@
     .mobile-view-navbar{
         display: none;
     }
+    
 }
 
 .menu-item{
     color: green;
+}
+.logout-button{
+  background-color: #48ac82;  
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 0px;
 }

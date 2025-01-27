@@ -52,6 +52,7 @@
 .social-media-icons{
     color:  #0d751e;
     margin: 10px;
+    font-size: 26px;
 }
 .footer-logo{
     height: 20px;
@@ -78,4 +79,8 @@
     .terms-conditions-container{
         width: auto;
     }
+}
+.different-icons{
+    background-color: #60a289;
+    color: #ffffff;
 }

@@ -46,9 +46,10 @@ const SignupPage = ({ onClose }) => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post('https://cryptocurrnecy.onrender.com/signup', formData);
+        console.log(formData)
+        const response = await axios.post('http://localhost:5000/signup', formData);
         console.log(response.data);
-        navigate('/');
+        navigate('/login');
       } catch (error) {
         console.error('Error during signup request:', error.response?.data || error.message);
         setErrors({ ...errors, submit: 'An error occurred during signup. Please try again.' });

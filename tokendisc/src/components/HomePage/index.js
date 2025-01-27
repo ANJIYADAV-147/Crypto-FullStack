@@ -11,7 +11,7 @@ import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WOW from 'wowjs';
 //import CountUp from 'react-countup';
-import companyLogo from '../images/companyLogo.jpg'
+import websiteLogo from '../images/website-logo.png'
 
 
 class HomePage extends Component {
@@ -45,7 +45,8 @@ class HomePage extends Component {
 
                 <div className='about-container'>
                     <div className='wow animate__animated animate__fadeInUp' data-wow-delay='0.2s'>
-                        <img src={companyLogo} className='about-img ' alt='aboutImg' />
+                        <img src={websiteLogo} className='about-img ' alt='aboutImg' />
+                        <h1 className='logoName'>Cryptocurrency</h1>
                     </div>
                     <div className='about-description-container wow animate__animated animate__fadeInUp' data-wow-delay='0.5s'>
                         <h1 className='about-heading'>About Us</h1>

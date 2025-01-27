@@ -1,23 +1,25 @@
-import {Component} from 'react'
+import { Component } from 'react'
 import 'animate.css/animate.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import Header from '../Header'
-import companyLogo from '../images/companyLogo.jpg'
-import Footer from '../Footer'
 
-class AboutPage extends Component{
-    render(){
-        return(
+import Footer from '../Footer'
+import websiteLogo from '../images/website-logo.png'
+
+class AboutPage extends Component {
+    render() {
+        return (
             <div className='about-component'>
-                <Header/>
+                <Header />
                 <div className='about-information-container'>
                     <h1 className='about-heading'>About Us</h1>
-                    <img src='https://demo.htmlcodex.com/2597/free-cryptocurrency-website-template/img/hero-2.png' className='about-section-img  img-fluid animate__animated animate__pulse animate__infinite' alt='img'/>
+                    <img src='https://demo.htmlcodex.com/2597/free-cryptocurrency-website-template/img/hero-2.png' className='about-section-img  img-fluid animate__animated animate__pulse animate__infinite' alt='img' />
                 </div>
                 <div className='about-container'>
                     <div className='wow animate__animated animate__fadeInUp' data-wow-delay='0.1s'>
-                        <img src={companyLogo} className='about-img ' alt='aboutImg'/>
+                        <img src={websiteLogo} className='about-img ' alt='aboutImg' />
+                        <h1 className='logoName'>Cryptocurrency</h1>
                     </div>
                     <div className='about-description-container wow animate__animated animate__fadeInUp' data-wow-delay='1s'>
                         <h1 className='about-heading'>About Us</h1>
@@ -29,10 +31,10 @@ class AboutPage extends Component{
                             Hybrid Exchanges combine features of CEX and DEX, balancing security, liquidity, and user control. Examples include Binance DEX and Nash.
                             This ecosystem is vital for the growth of the cryptocurrency market, catering to both individual and institutional investors.
                         </p>
-                        
+
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         )
     }

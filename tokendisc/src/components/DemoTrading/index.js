@@ -3,7 +3,7 @@ import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './index.css'
 import Header from '../Header'
-import companyLogo from '../images/companyLogo.jpg'
+import companyLogo from '../images/website-logo.png'
 import Footer from '../Footer'
 
 class DemoTrading extends Component{

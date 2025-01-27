@@ -3,7 +3,7 @@ const mysql=require('mysql');
 const cors=require('cors');
 
 const dotenv=require('dotenv');
-dotenv.config({path:'./config.env'})
+dotenv.config({path:'./.env'})
 
 const app=express();
 app.use(cors({
@@ -18,6 +18,7 @@ const db=mysql.createConnection({
     password:'',
     database:'signup'
 })
+
 
 
 
@@ -39,13 +40,18 @@ app.post('/signup', (req, res) => {
         req.body.email,
         req.body.password,
     ];
-    
+    console.log(values)
     db.query(sql, values, (err, data) => {
         if (err) {
+            console.error('Database Error:', err); 
             return res.status(500).json({ error: err.message });
         }
         return res.status(201).json({ message: 'User created successfully', userId: data.insertId});
 });
+});
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
 });
 
 
@@ -67,7 +73,9 @@ app.post('/login', (req, res) => {
     });
 });
 
+const PORT = process.env.PORT || 5000
 
-app.listen(5000,()=>{
+
+app.listen(PORT,()=>{
   console.log('server is running on port 5000');  
 })
